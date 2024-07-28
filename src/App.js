@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Accordion from "./components/accordion";
+import "./App.css";
+import Star from "./components/star-rating";
+import ImageSlider from "./components/img-slider";
+import LoadButton from "./components/load-more-data";
+import QRcode from "./components/QR-code";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Accordion />
+      <Star noOfStars={8} />
+      <ImageSlider
+        url={"https://picsum.photos/v2/list"}
+        limit={"10"}
+        page={"1"}
+      />
+
+      <LoadButton />
+      <QRcode />
     </div>
   );
 }
