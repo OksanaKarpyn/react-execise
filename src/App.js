@@ -4,6 +4,8 @@ import Star from "./components/star-rating";
 import ImageSlider from "./components/img-slider";
 import LoadButton from "./components/load-more-data";
 import QRcode from "./components/QR-code";
+import LightDarkMode from "./components/light-dark-mode";
+import ModalText from "./components/modal-popup/modalText";
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,8 @@ function App() {
 
       <LoadButton />
       <QRcode />
+      <LightDarkMode />
+      <ModalText />
     </div>
   );
 }
