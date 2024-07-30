@@ -6,6 +6,9 @@ import LoadButton from "./components/load-more-data";
 import QRcode from "./components/QR-code";
 import LightDarkMode from "./components/light-dark-mode";
 import ModalText from "./components/modal-popup/modalText";
+import GitHub from "./components/gitHub-profile-finder";
+import SearchAutocomplite from "./components/search-autocomplite-whit-api";
+import CrudTodoList from "./components/crud-todo-list";
 function App() {
   return (
     <div className="App">
@@ -21,6 +24,9 @@ function App() {
       <QRcode />
       <LightDarkMode />
       <ModalText />
+      <GitHub />
+      <SearchAutocomplite />
+      <CrudTodoList />
     </div>
   );
 }
